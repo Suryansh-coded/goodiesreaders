@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GoodiesReaders Blog</title>
+    <style>
+        body {
+            background-color: #e6ffe6;
+            font-family: Arial;
+            color: #003300;
+            padding: 20px;
+        }
+        .post {
+            background-color: #ccffcc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌿 Welcome to GoodiesReaders 🌿</h1>
+    {% for post in posts %}
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
